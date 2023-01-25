@@ -25,6 +25,8 @@ export const getAllTasks = async () => {
   const url = baseUrl;
 
   const response = await fetch(url+'tasks/');
+  console.log(url+'tasks/');
+
   const data = await response.json();
   return data;
 };
