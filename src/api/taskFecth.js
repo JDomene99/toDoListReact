@@ -1,5 +1,5 @@
 // const baseUrl = 'http://localhost:4000/';
-const baseUrl = 'http://todolist-api.com/';
+const baseUrl = 'https://todolist-api-3yfr.onrender.com/tasks/';
 export const createTask = async (task) => {
   try {
     const url = baseUrl;
@@ -24,9 +24,8 @@ export const createTask = async (task) => {
 export const getAllTasks = async () => {
   const url = baseUrl;
 
-  const response = await fetch(url+'tasks/');
-  console.log(url+'tasks/');
-
+  const response = await fetch(url);
+  
   const data = await response.json();
   return data;
 };
