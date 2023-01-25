@@ -1,5 +1,5 @@
-// const baseUrl = 'http://localhost:4000/tasks/';
-const baseUrl = 'http://todolistjosedomene.com/tasks/';
+// const baseUrl = 'http://localhost:4000/';
+const baseUrl = 'http://todolist-api.com/';
 export const createTask = async (task) => {
   try {
     const url = baseUrl;
@@ -24,7 +24,7 @@ export const createTask = async (task) => {
 export const getAllTasks = async () => {
   const url = baseUrl;
 
-  const response = await fetch(url);
+  const response = await fetch(url+'tasks/');
   const data = await response.json();
   return data;
 };
