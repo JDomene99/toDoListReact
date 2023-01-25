@@ -53,14 +53,15 @@ function Task() {
       </nav>
       <section className="bg-slate-700  flex flex-row flex-wrap xs:gap-10 justify-between w-12/12 sm:px-4 md:px-12 xs:px-5 pb-10">
         {}
-        {
-          tasksRecords.length === 0? (
-            <div>
-              <h1>No hay tareas para mostrar</h1>
-              </div>) : tasksRecords.map((tasks) => {
-          return <TaskCard task={tasks} key={tasks._id} />;
-        })
-        }
+        {tasksRecords.length === 0 ? (
+          <div>
+            <h1>No hay tareas para mostrar</h1>
+          </div>
+        ) : (
+          tasksRecords.map((tasks) => {
+            return <TaskCard task={tasks} key={tasks._id} />;
+          })
+        )}
       </section>
     </main>
   );
