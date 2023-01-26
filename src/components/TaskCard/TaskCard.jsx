@@ -14,7 +14,6 @@ function TaskCard({ task }) {
   const handleDelete = async (id) => {
     try {
       const response = await deleteTask(id);
-      console.log(response);
     } catch (error) {
       console.log(error);
     }
@@ -25,7 +24,6 @@ function TaskCard({ task }) {
   }
 
   const handleClick = (task) => {
-    console.log(task);
     setTasktModal(task);
     setShowModal(true);
   };
@@ -33,7 +31,7 @@ function TaskCard({ task }) {
   return (
     <div
       key={task._id}
-      className="flex flex-col flex-wrap bg-slate-400 border-black rounded-md p-3 xs:w-10/12 sm:w-5/12 lg:w-3/12 2xl:w-2/12  justify-between xs:mx-auto sm:mx-0"
+      className="flex flex-col flex-wrap bg-slate-400 border-black rounded-md p-3 xs:w-10/12 sm:w-5/12 lg:w-3/12 2xl:w-2/12  justify-between xs:mx-auto sm:mx-0 hover:scale-105 ease-in-out duration-300"
     >
       
 
