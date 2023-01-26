@@ -1,5 +1,5 @@
-const baseUrl = 'http://localhost:4000/tasks/';
-// const baseUrl = 'https://todolist-api-3yfr.onrender.com/tasks/';
+// const baseUrl = 'http://localhost:4000/tasks/';
+const baseUrl = 'https://todolist-api-3yfr.onrender.com/tasks/';
 export const createTask = async (task) => {
   try {
     const url = baseUrl;
