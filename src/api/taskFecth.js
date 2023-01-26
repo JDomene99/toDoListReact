@@ -41,7 +41,6 @@ export const getTask = async (task) => {
 export const deleteTask = async (task) => {
   try {
     const url = baseUrl + task;
-    console.log(url);
     const response = await fetch(url, {
       method: "DELETE",
     });
@@ -78,7 +77,6 @@ export const editTask = async (id, values) => {
 };
 
 export const getAllTasksByName = async (name) => {
-  console.log(name);
   const url = baseUrl+"title/" + name;
   const response = await fetch(url);
   const data = await response.json();
