@@ -19,7 +19,7 @@ function FilterByName({ toFind }) {
     }
 
   return (
-    <form className='xs:w-12/12 sm:w-11/12 md:w-5/12 lg:w-4/12 2xl:w-5/12 xs:mb-4 xs:mx-auto sm:mb-6 sm:mx-auto md:ml-0'>
+    <form className='xs:w-12/12 sm:w-11/12 md:w-5/12 lg:w-4/12 2xl:w-5/12 xs:mb-4 xs:mx-auto sm:mb-6 sm:mx-auto md:ml-0 pt-5'>
       <TextField  
       className='sm:w-10/12 text-white'
       label="Task Name" 
